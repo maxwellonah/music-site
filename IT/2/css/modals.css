@@ -1,0 +1,10 @@
+body{
+    background-color:  rgb(117, 0, 0) !important;
+}
+.col-md-12 img{
+    height: 350px !important;
+    box-shadow: -1px 0px 20px 12px rgba(60, 0, 0, 0.927) !important;
+}
+.col-md-3 img{
+    height: 150px;
+}

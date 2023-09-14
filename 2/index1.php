@@ -16,7 +16,7 @@
 
   <title>wave site bs</title>
 </head>
-<?php include 'header.php'; ?>
+<?php include 'include/header.php'; ?>
 
 <body >
   
@@ -40,7 +40,7 @@
               </div>
             </div>
             <div class="col-md-6 text-light">
-              <h1 style="padding-left: 290px; font-size: 300%; ">WAVE</h1> <h1 style="padding-left: 225px; font-size: 300%; ">INVESTORS</h1>
+              <h1 class="text-center">WAVE</h1> <h1 class="text-center">INVESTORS</h1>
                     <p style="font-size: 150%;">Our mission is to unlock the potential of human creativity by giving a million creative artist the
                         opportunity to live off their art and billions of fans the opportunity to enjoy and be inspired by it</p>
             </div>
@@ -91,8 +91,8 @@
     <h2 class="custom-underline px-4">Events</h2>
     <div class="container">
       <div class="row  mt-2">
-        <h4>CONCERTS</h4>
-        <div class="container mx-5">
+        <h4 class="text-center mx-1">CONCERTS</h4>
+        <div class="container mx-2">
           <div class="row px-3 mx-3" >
             <div class="col-md-6 ">
               <div class="d-flex justify-content-end">
@@ -114,7 +114,7 @@
           </div>
         </div>
         
-        <div class="container mx-5 mt-1">
+        <div class="container mx-2 mt-1">
           <div class="row px-3 mx-3" >
             <div class="col-md-6 text-end">
               <p class="d-inline-flex">Playboi Carti tour 2023: More than 100 artists have been announced to perform at the next edition of Rolling Loud California,
@@ -136,7 +136,7 @@
           </div>
         </div>
 
-        <div class="container mx-5">
+        <div class="container mx-2">
           <div class="row px-3 mx-3" >
             <div class="col-md-6 ">
               <div class="d-flex justify-content-end">
@@ -158,7 +158,7 @@
           </div>
         </div>
 
-        <div class="container mx-5 mt-1">
+        <div class="container mx-2 mt-1">
           <div class="row px-3 mx-3" >
             <div class="col-md-6 text-end">
               <p class="d-inline-flex">30 million albums worldwide and surpassed over 10 billion audio streams across digital outlets to date.
@@ -188,10 +188,10 @@
     <div class="container">
       <div class="row  mt-2">
         <div class="col-md-6"><img src="images/wave logo.png" alt="wave logo"></div>
-        <div class="col-md-6">Spotify’s mission is to unlock the potential of human creativity by giving a million creative artists the opportunity to live off their art and billions of fans the opportunity to enjoy and be inspired by it. Spotify’s platform revolutionized music listening forever when we launched in 2008. Our move into podcasting brought innovation and a new generation of listeners to the medium, and in 2022 we entered the next audio market primed for growth with the addition of audiobooks.
+        <div class="col-md-6">Wave's mission is to unlock the potential of human creativity by giving a million creative artists the opportunity to live off their art and billions of fans the opportunity to enjoy and be inspired by it. Wave's platform revolutionized music listening forever when we launched in 2008. Our move into podcasting brought innovation and a new generation of listeners to the medium, and in 2022 we entered the next audio market primed for growth with the addition of audiobooks.
           Today, more listeners than ever can discover, manage and enjoy over 100 million tracks, 5 million podcasts titles, and 350,000 audiobooks on Spotify. We are the world’s most popular audio streaming subscription service with more than 551 million users, including 220 million subscribers in 184 markets.
           
-          Spotify’s mission is to unlock the potential of human creativity by giving a million creative artists the opportunity to live off their art and billions of fans the opportunity to enjoy and be inspired by it. Spotify’s platform revolutionized music listening forever when we launched in 2008. Our move into podcasting brought innovation and a new generation of listeners to the medium, and in 2022 we entered the next audio market primed for growth with the addition of audiobooks.
+          Wave's mission is to unlock the potential of human creativity by giving a million creative artists the opportunity to live off their art and billions of fans the opportunity to enjoy and be inspired by it. Wave's platform revolutionized music listening forever when we launched in 2008. Our move into podcasting brought innovation and a new generation of listeners to the medium, and in 2022 we entered the next audio market primed for growth with the addition of audiobooks.
           Today, more listeners than ever can discover, manage and enjoy over 100 million tracks, 5 million podcasts titles, and 350,000 audiobooks on Spotify. We are the world’s most popular audio streaming subscription service with more than 551 million users, including 220 million subscribers in 184 markets.
         </div>
       </div>
@@ -205,7 +205,7 @@
       <div class="modal-content">
         <div class="modal-body bg-pri">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <?php include 'podcast.php'; ?>
+          <?php include 'include/podcast.php'; ?>
         </div>
       </div>
     </div>
@@ -217,7 +217,7 @@
       <div class="modal-content">
       <div class="modal-body bg-pri">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <?php include 'audio.php'; ?>
+          <?php include 'include/audio.php'; ?>
         </div>
       </div>
     </div>
@@ -229,13 +229,64 @@
       <div class="modal-content">
       <div class="modal-body bg-pri">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <?php include 'artists.php'; ?>
+          <?php include 'include/artists.php'; ?>
         </div>
       </div>
     </div>
   </div>
 
-  <?php include 'footer.php'; ?>
+   <!-- Modal signup-->
+   <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="podcastLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+      <div class="modal-body bg-pri">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <?php include 'include/signup.php'; ?>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal register-->
+  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="podcastLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+      <div class="modal-body bg-pri">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <?php include 'include/registration.php'; ?>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal login-->
+  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="podcastLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+      <div class="modal-body bg-pri">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <?php include 'include/wavelogin.php'; ?>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal login2-->
+  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="podcastLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+      <div class="modal-body bg-pri">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <?php include 'include/wavelogin2.php'; ?>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+  <?php include 'include/register.php'; ?>
+
+  <?php include 'include/footer.php'; ?>
 
   <!--my js link-->
   <script src="js/java.js"></script>
@@ -244,6 +295,7 @@
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>-->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    
 </body>
 
 

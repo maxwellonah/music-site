@@ -1,5 +1,5 @@
 
-<header class="fixed-top">
+
     <div class="container-fluid bg-pri p-0">
       <div class="row">
         <!--brand logo div nav1-->
@@ -11,8 +11,8 @@
         <!--other top header div or right hand div nav1-->
         <div class="col-md-6 d-flex justify-content-end ">
           <form class="d-flex p-3" role="search">
-            <button class="btn btn-outline-light" type="submit">Login</button>
-            <button class="btn btn-outline-light" type="submit">Register</button>
+            <button class="btn btn-outline-light" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal5">Login</button>
+            <button class="btn btn-outline-light" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal3">Register</button>
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-light" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
             </button>
@@ -22,7 +22,7 @@
     </div>
     </div>
     <!--nav1-->
-    <nav class="navbar navbar-expand-lg bg-light p-0">
+    <nav class="navbar sticky-top navbar-expand-lg bg-light p-0">
       <div class="container-fluid">
         <button class="navbar-toggler bg-light text-white height-30p" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" id="togglebtn" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
@@ -38,4 +38,4 @@
         </div>
       </div>
     </nav>
-</header>
+

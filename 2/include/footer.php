@@ -10,10 +10,10 @@
     
         <ul class="nav col-md-4 justify-content-end">
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">News</a></li>
+          <li class="nav-item"><a href="#podcast" class="nav-link px-2 text-muted">News</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          <li class="nav-item"><a href="#readmoreButton3" class="nav-link px-2 text-muted">About</a></li>
         </ul>
       </footer>
     </div>

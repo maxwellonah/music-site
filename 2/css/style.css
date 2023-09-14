@@ -14,6 +14,9 @@ body{
 .text-brown{
     color: rgb(117, 0, 0) !important;
 }
+.text-red{
+    color: rgb(117, 0, 0);
+}
 .text-white{
     color: white;
 }
@@ -37,6 +40,7 @@ body{
 .custom-underline{
     text-decoration: underline;
     text-decoration-thickness: 3px;
+    text-decoration-color: white;
 }
 .btnt:hover{
     background-color: rgb(117, 0, 0) !important;
@@ -54,3 +58,24 @@ body{
     color: white !important;
     border-color:black;
 }
+.hr-line{
+    border-top: 2px;
+}
+.btn-modal:hover{
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255) !important;
+    border-color:black;
+}
+.btn-nav2{
+    border-color: black !important;
+    color: black !important;
+    background-color: white !important;
+}
+.btn-nav2:hover{
+    background-color: rgb(117, 0, 0) !important;
+    color: white !important;
+    border-color:black;
+}
+/*side bar css*/
+
+

@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+
+
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="podcastLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+      <div class="modal-body bg-pri">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <!DOCTYPE html>
 <html>
 <head>
     <title>User Login</title>
@@ -25,3 +32,7 @@
     </section>
 </body>
 </html>
+        </div>
+      </div>
+    </div>
+  </div>

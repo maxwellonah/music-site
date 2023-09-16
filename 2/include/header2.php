@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+// Check if the user is not logged in (no active session)
+if (!isset($_SESSION["username"])) {
+    // Redirect the user to the login page
+    header("Location: http://localhost/IT/2/index1.php");
+    exit();
+}
+?>
 <div class="container-fluid bg-pri p-0 fixed-top">
     <div class="row">
         <!--brand logo div nav1-->
@@ -11,10 +21,13 @@
         <!--other top header div or right hand div nav1-->
         <div class="col-md-6 d-flex justify-content-end ">
             <div class="d-flex p-3" role="search">
-                <button class="btn btn-outline-light">stran9er</button>
+                <button class="btn btn-outline-light"><?php echo $_SESSION['username'];?></button>
                 <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Logout</button>
             </div>
         </div>
     </div>
 </div>
 
+
+
+happy birthday sir but i know it tomorrow

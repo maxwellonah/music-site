@@ -1,5 +1,13 @@
 
-<!DOCTYPE html>
+
+
+
+        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="podcastLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+      <div class="modal-body bg-pri">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <!DOCTYPE html>
         <html>
         <head>
             <title>User Registration</title>
@@ -36,8 +44,7 @@
             </section>
         </body>
         </html>
-
-        <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-    Launch static backdrop modal
-  </button>
+        </div>
+      </div>
+    </div>
+  </div>

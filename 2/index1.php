@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--jquery-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <!--my css link-->
   <link rel="stylesheet" href="css/style.css">
   
@@ -25,20 +27,7 @@
     <div class="container-fluid mt-5">
         <div class="row" >
             <div class="col-md-6">
-              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/JUICE WRLD.jpg" class="d-block w-100" alt="juicewrld">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/XXX.png" class="d-block w-100" alt="XXXtentacion">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/travis-scott.png" class="d-block w-100" alt="travis-scott">
-                  </div>
-                </div>
-              </div>
-            </div>
+            <?php include 'include/slidermain.php'; ?>                               
             <div class="col-md-6 text-light">
               <h1 class="text-center">WAVE</h1> <h1 class="text-center">INVESTORS</h1>
                     <p style="font-size: 150%;">Our mission is to unlock the potential of human creativity by giving a million creative artist the
@@ -70,19 +59,7 @@
             </div>
           </div>
           <div class="col-md-5">
-            <div id="carouselExampleSlidesOnly" class="carousel-slide" data-bs-ride="carousel">
-              <div class="carousel-inner" style="width: 450px; height: 200px;">
-                <div class="carousel-item active">
-                  <img src="images/updates.webp" class="d-block w-100" alt="updates">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/concerts.jpg" class="d-block w-100" alt="concerts">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/new signinigs.jpg" class="d-block w-100" alt="signinigs">
-                </div>
-              </div>
-            </div>
+            <?php include 'include/slidersub1.php'; ?> 
           </div>
       </div>
     </div>
@@ -200,94 +177,34 @@
   
 
   <!-- Modal Podcast-->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="podcastLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-      <div class="modal-content">
-        <div class="modal-body bg-pri">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <?php include 'include/podcast.php'; ?>
-        </div>
-      </div>
-    </div>
-  </div>
+  <?php include 'include/podcast.php'; ?>
 
   <!-- Modal Audio-->
-  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="podcastLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-      <div class="modal-content">
-      <div class="modal-body bg-pri">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <?php include 'include/audio.php'; ?>
-        </div>
-      </div>
-    </div>
-  </div>
+  <?php include 'include/audio.php'; ?>
 
   <!-- Modal Artist-->
-  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="podcastLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-      <div class="modal-content">
-      <div class="modal-body bg-pri">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <?php include 'include/artists.php'; ?>
-        </div>
-      </div>
-    </div>
-  </div>
+  <?php include 'include/artists.php'; ?>
 
    <!-- Modal signup-->
-   <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="podcastLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-      <div class="modal-content">
-      <div class="modal-body bg-pri">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <?php include 'include/signup.php'; ?>
-        </div>
-      </div>
-    </div>
-  </div>
+   <?php include 'include/signup.php'; ?>
 
   <!-- Modal register-->
-  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="podcastLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-      <div class="modal-content">
-      <div class="modal-body bg-pri">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <?php include 'include/registration.php'; ?>
-        </div>
-      </div>
-    </div>
-  </div>
+  <?php include 'include/registration.php'; ?>
 
   <!-- Modal login-->
-  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="podcastLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-      <div class="modal-content">
-      <div class="modal-body bg-pri">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <?php include 'include/wavelogin.php'; ?>
-        </div>
-      </div>
-    </div>
-  </div>
+  <?php include 'include/wavelogin.php'; ?>
 
   <!-- Modal login2-->
-  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="podcastLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-      <div class="modal-content">
-      <div class="modal-body bg-pri">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <?php include 'include/wavelogin2.php'; ?>
-        </div>
-      </div>
-    </div>
-  </div>
-  
- 
-  <?php include 'include/register.php'; ?>
+  <?php include 'include/wavelogin2.php'; ?>
 
+  <!--error messages-->
+
+  <!--footer-->
   <?php include 'include/footer.php'; ?>
 
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!--my js link-->
   <script src="js/java.js"></script>
   <!--bootstrap js link
@@ -295,6 +212,24 @@
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>-->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+    // Check if the URL parameter 'registrationSuccess' is present
+    const urlParams = new URLSearchParams(window.location.search);
+    const registrationSuccess = urlParams.get('registrationSuccess');
+
+    console.log('Registration success:', registrationSuccess); // Debug line
+
+    // If 'registrationSuccess' is '1', display the Bootstrap modal with ID 'exampleModal6'
+    if (registrationSuccess === '1') {
+        const modal = document.getElementById('exampleModal6');
+        if (modal) {
+            modal.classList.add('show'); // Add the 'show' class to display the modal
+            modal.style.display = 'block'; // Set the modal's display style to 'block'
+        }
+    }
+</script>
+
+
     
 </body>
 

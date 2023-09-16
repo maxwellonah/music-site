@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+
+
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="podcastLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+      <div class="modal-body bg-pri">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          
+          <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +24,7 @@
             <button class="btn btn-light mt-5 justify-content-center rounded-pill" style="width: 525px;" type="button"><i class="fa-brands fa-google fa-beat px-4" style="color: #c20000;"></i>CONTINUE WITH GOOGLE</button>
             <button class="btn btn-light mt-3 justify-content-center rounded-pill" style="width: 525px;" type="button"><i class="fa-brands fa-facebook-f fa-beat px-4" style="color: #ad2300;"></i>CONTINUE WITH FACEBOOK</button>
             <button class="btn btn-light mt-3 justify-content-center rounded-pill" style="width: 525px;" type="button"><i class="fa-brands fa-apple fa-beat px-4" style="color: #b8002e;"></i>CONTINUE WITH APPLE</button>
-            <button class="btn btn-light mt-3 justify-content-center rounded-pill" style="width: 525px;" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal6"><i class="fa-solid fa-at fa-beat px-4" style="color: #b00303;"></i>CONTINUE WITH USERNAME</button>
+            <button id="loginbtn" class="btn btn-light mt-3 justify-content-center rounded-pill" style="width: 525px;" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal6"><i class="fa-solid fa-at fa-beat px-4" style="color: #b00303;"></i>CONTINUE WITH USERNAME</button>
         </div>
         <div class="row">
             <div class="col-md-12 text-end">
@@ -32,3 +40,7 @@
     </section>
 </body>
 </html>
+        </div>
+      </div>
+    </div>
+  </div>

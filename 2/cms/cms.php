@@ -10,6 +10,7 @@ if (!isset($_SESSION["username"])) {
     exit();
 }
 ?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,42 +45,83 @@ if (!isset($_SESSION["username"])) {
 
 
 
-    <div class="container">
-        <section class="text-light mt-5 pt-5">
-            <form action="cmsprocess.php" method="post" enctype="multipart/form-data">
-                <div class="row">
-                    <div class="col-md-6">
-                        <label for="coverart">Cover Art</label>
-                        <input  type="file" name="coverart" id="coverart" class="form-control me-2" accept="image/*" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="artist">Artist</label>
-                        <input name="artist" class="form-control me-2" type="text" placeholder="Enter Artist Name"
-                            required>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-md-6">
-                        <label for="song">Song</label>
-                        <input name="song" class="form-control me-2" type="text" placeholder="Enter Song Title"
-                            required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="audio">Audio</label>
-                        <input name="audio" id="audio" class="form-control me-2" type="file" accept="audio/*" required>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-12 text-center">
-                        <button name="submit" class="btn btn-light mt-3 rounded-pill" style="width: 150px;"
-                            type="submit">Upload</button>
-                    </div>
-                </div>
-            </form>
-        </section>
-    </div>
-    
 
+    <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
+        <div class="col">
+            <div class="card bg-pri2">
+                <div class="container">
+                    <section class="text-light mt-0 pt-2">
+                        <form action="cmsprocess.php" method="post" enctype="multipart/form-data">
+                            <div class="row">
+                                <h3 class="text-light m-0 p-0">New Song Form</h3>
+                                <div class="col-md-6">
+                                    <label for="coverart">Cover Art</label>
+                                    <input type="file" name="coverart" id="coverart" class="form-control me-2"
+                                        accept="image/*" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="artist">Artist</label>
+                                    <input name="artist" class="form-control me-2" type="text"
+                                        placeholder="Enter Artist Name" required>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col-md-6">
+                                    <label for="song">Song</label>
+                                    <input name="song" class="form-control me-2" type="text"
+                                        placeholder="Enter Song Title" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="audio">Audio</label>
+                                    <input name="audio" id="audio" class="form-control me-2" type="file"
+                                        accept="audio/*" required>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-12 text-center">
+                                    <button name="submit" class="btn btn-light mt-3 rounded-pill" style="width: 150px;"
+                                        type="submit">Upload</button>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional
+                        content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

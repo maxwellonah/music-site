@@ -32,6 +32,11 @@
   <div class="row mt-5 mx-5 text-light px-5">
     <h2>WELCOME BACK</h2>
   </div>
+  <div class="container text-end ">
+    <div class="btn btn-light btn-rounded-pill p-1" data-bs-toggle="modal" data-bs-target="#exampleModal11">
+      <h5 class="p-0 m-0">MORE</h5>
+    </div>
+  </div>
   <?php include 'include/audio1.php' ?>
   <section>
     <div class="row mt-5 text-light mx-5 px-3">
@@ -46,10 +51,12 @@
   </section>
 
   <div class="px-5 mt-5">
-    
-  </div>
 
-  <?php include 'include/music-player.php'; ?>
+  </div>
+  <!--modal for more songs                                       -->
+  <?php include 'include/audio1a.php' ?>
+<?php include 'include/music-player.php'; ?>
+  
   <?php include 'include/footer.php'; ?>
 
   <!--my js link-->
@@ -59,6 +66,8 @@
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>-->
   <script src="bootstrap/js/bootstrap.min.js"></script>
+  <!--for the music player-->
+  
 </body>
 
 </html>

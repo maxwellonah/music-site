@@ -35,3 +35,30 @@ if (registrationSuccess === '1') {
 document.getElementById("closemodalbtn4").addEventListener("click", function () {
     modal.style.display = 'none';
 });
+
+//for the music player
+let progress = document.getElementById("progress");
+let song = document.getElementById("song");
+let playPauseIcon = document.getElementById("playPauseIcon");
+
+song.addEventListener("loadedmetadata", function () {
+    progress.style.width = "0%";
+});
+
+function playPause() {
+    if (song.paused) {
+        song.play();
+        playPauseIcon.classList.remove("fa-play");
+        playPauseIcon.classList.add("fa-pause");
+    } else {
+        song.pause();
+        playPauseIcon.classList.remove("fa-pause");
+        playPauseIcon.classList.add("fa-play");
+    }
+}
+
+song.addEventListener("timeupdate", function () {
+    const progressPercentage = (song.currentTime / song.duration) * 100;
+    progress.style.width = progressPercentage + "%";
+});
+
